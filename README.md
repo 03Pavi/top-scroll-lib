@@ -42,13 +42,14 @@ sx={{
 | Option  | Type   | Default  | Description |
 |---------|--------|----------|-------------|
 | `isRouned` | boolean | `false` | Round edge the progress bar |
+| `originFrom` | enum (center, left, right) | `center` | origin of the progress bar |
 
 ## Example
 
 ```ts
 import { TopScrollBar } from "top-scroll";
 
-<TopScrollBar rounded sx={{ bgcolor: "blue" }}/>
+<TopScrollBar rounded style={{ zindex: -1 }}/>
 ```
 
 ## License
