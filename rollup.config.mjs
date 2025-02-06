@@ -1,4 +1,6 @@
 import typescript from "@rollup/plugin-typescript";
+import postcss from 'rollup-plugin-postcss';
+
 import { defineConfig } from "rollup";
 
 export default defineConfig({
@@ -8,8 +10,11 @@ export default defineConfig({
     format: "es",
     name: "top-scroll",
   },
-  external: ["react", "react-dom","motion"],
+  external: ["react", "react-dom","motion/react","framer-motion"],
   plugins: [
-      typescript({tsconfig: "tsconfig.json"})
+      typescript({tsconfig: "tsconfig.json"}),
+      postcss({
+        extract:true
+      }),
   ]
 });

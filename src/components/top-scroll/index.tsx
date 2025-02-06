@@ -1,10 +1,38 @@
 
 import React from "react"
-const TopScroll = () => {
+import { motion, useScroll } from "framer-motion"
+
+interface TopScrollProps {
+  rounded?: boolean;
+  style?: React.CSSProperties;
+  originFrom?: "left" | "right"
+}
+
+const TopScroll = ({ ...props }: TopScrollProps) => {
+  const { scrollYProgress } = useScroll();
+  const origin = props.originFrom
   return (
-    <div>
-      <h1>helllo</h1>
-    </div>
+    <motion.div
+      style={{
+        transformOrigin: origin,
+        scaleX: scrollYProgress,
+        borderRadius: props.rounded ? "50px" : "0px",
+        ...baseStyle,
+        ...props.style,
+      }}
+    >
+    </motion.div>
   )
 }
 export { TopScroll }
+
+
+
+const baseStyle: React.CSSProperties = {
+  height: "10px",
+  backgroundColor: "red",
+  position: "fixed",
+  width: "100%",
+  top: 0,
+  left: 0
+}
