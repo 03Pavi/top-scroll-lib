@@ -12,7 +12,10 @@
     "build": "npx rollup -c"
   },
   "keywords": [],
-  "author": "",
+  "author": "pavitar singh",
+  "social":{
+    "github":"https://github.com/Pavitar01"
+  },
   "license": "ISC",
   "description": "",
   "devDependencies": {
