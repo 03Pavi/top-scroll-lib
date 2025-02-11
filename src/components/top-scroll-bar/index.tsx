@@ -8,7 +8,7 @@ interface TopScrollProps {
   originFrom?: "left" | "right"
 }
 
-const TopScroll = ({ ...props }: TopScrollProps) => {
+const TopScrollBar = ({ ...props }: TopScrollProps) => {
   const { scrollYProgress } = useScroll();
   const origin = props.originFrom
   return (
@@ -24,7 +24,7 @@ const TopScroll = ({ ...props }: TopScrollProps) => {
     </motion.div>
   )
 }
-export { TopScroll }
+export { TopScrollBar }
 
 
 

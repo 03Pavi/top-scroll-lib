@@ -1,1 +1,1 @@
-export * from "./top-scroll"
+export * from "./top-scroll-bar"

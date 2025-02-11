@@ -8,7 +8,7 @@ export default defineConfig({
   output: {
     dir: "dist",
     format: "es",
-    name: "top-scroll",
+    name: "top-scroll-bar",
   },
   external: ["react", "react-dom","motion/react","framer-motion"],
   plugins: [

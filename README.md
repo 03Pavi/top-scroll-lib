@@ -7,13 +7,13 @@ A simple and lightweight npm package that adds a top progress scroll bar to your
 Install the package using npm or yarn:
 
 ```sh
-npm install top-scroll
+npm install top-scroll-bar
 ```
 
 or
 
 ```sh
-yarn add top-scroll
+yarn add top-scroll-bar
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ yarn add top-scroll
 Import and initialize the top scroll bar in your project:
 
 ```ts
-import { TopScrollBar } from "top-scroll";
+import { TopScrollBar } from "top-scroll-bar";
 ```
 
 This will display a progress bar at the top of the page that updates as the user scrolls.
@@ -32,9 +32,9 @@ You can pass options to customize the appearance of the scroll bar:
 
 ```ts
 <TopScrollBar
-sx={{
-...custom css properties
-}}
+    sx={{
+    ...custom css properties
+    }}
 />
 ```
 
@@ -47,7 +47,7 @@ sx={{
 ## Example
 
 ```ts
-import { TopScrollBar } from "top-scroll";
+import { TopScrollBar } from "top-scroll-bar";
 
 <TopScrollBar rounded style={{ zindex: -1 }}/>
 ```

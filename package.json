@@ -1,6 +1,6 @@
 {
-  "name": "top-scroll",
-  "version": "1.0.0",
+  "name": "top-scroll-bar",
+  "version": "1.0.6",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,8 +13,8 @@
   },
   "keywords": [],
   "author": "pavitar singh",
-  "social":{
-    "github":"https://github.com/Pavitar01"
+  "social": {
+    "github": "https://github.com/Pavitar01"
   },
   "license": "ISC",
   "description": "",
@@ -23,7 +23,6 @@
     "@rollup/plugin-typescript": "^12.1.2",
     "@types/react": "^19.0.8",
     "autoprefixer": "^10.4.20",
-    "framer-motion": "^12.3.1",
     "motion": "^12.3.1",
     "postcss": "^8.5.1",
     "postcss-loader": "^8.1.1",
@@ -35,6 +34,7 @@
   },
   "dependencies": {
     "@rollup/plugin-commonjs": "^28.0.2",
-    "@rollup/plugin-node-resolve": "^16.0.0"
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "framer-motion": "^12.4.2"
   }
 }
